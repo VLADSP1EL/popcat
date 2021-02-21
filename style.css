@@ -1,0 +1,12 @@
+@font-face {
+    font-family: SFProDisplay-Light; /* Гарнитура шрифта */
+    src: url(fonts/SFProDisplay-Light.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+.restorebutton{
+		font-family: SFProDisplay-Light;
+	color: white;
+	font-size: 35px;
+	transition: 0.3s;
+}

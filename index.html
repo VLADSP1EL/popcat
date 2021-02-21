@@ -1,0 +1,130 @@
+<!--
+POPCAT VER. 1.5.2
+UPDATE 11.01.2021
+
+by VladSpiel
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="animations/swoosh.css">
+	<link rel="stylesheet" type="text/css" href="animations/spin.css">
+
+	<title>POP CAT</title>
+	<link id="default_skin" rel="stylesheet" type="text/css" href="main.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no" charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="/img/skin/art_close.jpg" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="mobile" id="mobile">
+<div class="main">
+<div class="spin">
+<div class="cat" id="cat" ontouchstart onclick="new DivObject()"></div></div><br>
+<!--<img id="autopopgif" src="img/background.gif" width="50px" style="border-radius: 100%"> -->
+<br><br>
+
+<img src="img/ranks/lvl_1.png" width="25px;" id="lvl_1">
+<img src="img/ranks/lvl_2.png" width="25px;" id="lvl_2">
+<img src="img/ranks/lvl_3.png" width="25px;" id="lvl_3">
+<img src="img/ranks/lvl_4.png" width="25px;" id="lvl_4">
+<img src="img/ranks/lvl_5.png" width="25px;" id="lvl_5">
+<img src="img/ranks/lvl_6.png" width="25px;" id="lvl_6">
+<img src="img/ranks/lvl_7.png" width="25px;" id="lvl_7">
+<img src="img/ranks/lvl_8.png" width="25px;" id="lvl_8">
+<img src="img/ranks/lvl_9.png" width="25px;" id="lvl_9">
+<img src="img/ranks/lvl_10.png" width="25px;" id="lvl_10">
+<img src="img/ranks/lvl_11.png" width="25px;" id="lvl_11">
+<img src="img/ranks/lvl_12.png" width="25px;" id="lvl_12">
+<img src="img/ranks/lvl_13.png" width="25px;" id="lvl_13">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_14">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_15">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_16">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_17">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_18">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_19">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_20">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_21">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_22">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_23">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_24">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_25">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_26">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_27">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_28">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_29">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_30">
+
+
+
+<a class="smalltext" id="lvl"></a><a class="smalltext" id="xp"></a><br>
+<div class="swoosh">
+<a id="opened" class="opened"></a><br></div><br>
+
+<a id="shopopen" onclick="openshop()"><img src="img/shop_icon.png" width="80px" id="openshop"></img><img id="shopopened" src="img/shop_opened.png" width="80px"></img></a><br>
+<div class="mainmenu">
+<a class="button" onclick="achivementsmenu()" id="achbutton">Achievements</a>
+
+<div class="menu" id="menu"><br>
+<a id="buystatus" class="smalltext">You bought a bob</a><br>
+<a id="cpc" class="opened" style="font-size: 30px;"></a><br><br>
+<img src="img/upgrades/mini_pop.png" width="25px">
+<a class="button" id="upgradecats" onclick="upgradeGet()"></a><br><a class="smalltext">+1 pop per click</a><Br><br>
+<img src="img/upgrades/pop.png" width="25px">
+<a class="button" id="pop" onclick="upgrade2()"></a><br><a class="smalltext">x2 pop per click</a><br><br>
+<img src="img/background.gif" style="border-radius: 100%" width="25px">
+<a class="button" id="autopop" onclick="buyautopop()"></a><br><a class="smalltext" id="autopopinfo"></a><br><br>
+<hr>
+<a class="opened" style="font-size: 30px;">Settings</a><br><br>
+<a class="button" id="background" onclick="changebackground()"></a><br><br>
+<a class="button" id="cat_skin" onclick="changeskin()">Skin: Black Eye</a><br><br><hr>
+<a class="restorebutton" id="restore" onclick="restoreapply()">Reset progress</a><br><br>
+<div id="sure">
+	<a class="opened">Reset progress?</a><Br>
+	<a class="button" onclick="restoreno()">NO&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	<a class="button" onclick="restore()">YES</a>
+</div>
+<a></a><br>
+</div>
+
+</div>
+
+<!--ACHIVEMENTS-->
+<div class="achivements" id="achivements_menu"><br><hr>
+		
+		<!--Discoverer-->
+		<div class="discoverer">
+		<a class="opened">Discoverer</a><br>
+		<img src="img/achivements/discoverer.jpg" width="100px;"><br>
+		<a class="smalltext">Enter the game for the first time!</a><hr></div>
+
+		<!--New levels - new cats-->
+		<div class="lvl10" id="lvl10">
+		<a class="opened" style="font-size: 35px;">New levels - new cats</a><br>
+		<img src="img/achivements/lvl10.png" width="100px;"><br>
+		<a class="smalltext">Reach level 10</a><hr></div>
+	
+	</div>
+
+</div>
+
+</div>
+</div>
+
+
+<div class="pc" id="pc" style="display: block; margin: 0 auto; text-align: center;padding-top: 200px;">
+
+	<a class="big_medium">Pop Cat</a><br>
+	<a class="opened" style="font-size:25px;">This site is designed for mobile and tablet</a><br><br>
+<a target="_blank"><img src="http://qrcoder.ru/code/?https%3A%2F%2Fpopcat.fun%2F&4&0" width="132" height="132" border="0" title="QR код"></a><br>
+<a class="smalltext" style="font-size: 10px; color: #989898">Visit this URL on your phone or tablet</a><br>
+<a class="smalltext">popcat.fun</a>
+</div>
+
+<script type="text/javascript" src="cout.js"></script>
+
+</body>
+</html>

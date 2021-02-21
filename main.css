@@ -1,0 +1,142 @@
+@font-face {
+    font-family: SFProDisplay-Light; /* Гарнитура шрифта */
+    src: url(fonts/SFProDisplay-Light.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body{
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	/*background-image: url(img/background.jpg);*/
+	appearance: none;
+}	
+
+
+
+.rankicon{
+	background-image: url(img/skin/art_close.jpg);
+	height: 20px;
+	background-size: contain;
+	display: block;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	object-fit: cover;
+	appearance: none;
+	padding-left: 150px;
+}
+
+
+.menu{
+	
+	background-color: rgba(117, 190, 218, 0.3);
+	border-radius: 25px;
+}
+.main{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	appearance: none;
+}
+
+.cat{
+	background-image: url(img/skin/art_close.jpg);
+	height: 300px;
+	background-size: contain;
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+	appearance: none;
+}
+
+.cat:active{
+	background-image: url(img/skin/art_open.jpg);
+	appearance: none;
+}
+
+.cat:target {
+		background-image: url(img/skin/art_open.jpg);
+	appearance: none;
+}
+
+.opened{
+	color: white;
+	text-decoration: none;
+	font-family: SFProDisplay-Light;
+	font-size: 50px;
+	appearance: none;
+}
+
+.button{
+	font-family: SFProDisplay-Light;
+	color: white;
+	font-size: 35px;
+	transition: 0.3s;
+}
+
+.smalltext{
+	font-family: SFProDisplay-Light;
+	color: white;
+	font-size: 20px;
+	transition: 0.3s;
+	
+}
+
+@media only screen and (min-width: 1025px)
+{
+	.button:hover{
+	font-family: SFProDisplay-Light;
+	color: black;
+	font-size: 25px;
+	border-radius: 20px;
+	background-color: white;
+
+	transition: 0.3s;
+}
+}
+
+@media only screen and ( max-width: 1024px) {
+.cat{
+	background-image: url(img/skin/art_close.jpg);
+	height: 350px;
+	background-size: contain;
+	display: block;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	/*border-radius: 20%;*/
+	appearance: none;
+}
+
+.main{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	appearance: none;
+}
+
+.button{
+	font-family: SFProDisplay-Light;
+	color: white;
+	font-size: 25px;
+	transition: 0.3s;
+}
+
+	.button:active{
+	font-family: SFProDisplay-Light;
+	color: black;
+	font-size: 25px;
+	border-radius: 20px;
+	background-color: white;
+
+	transition: 0.3s;
+}
+
+}
+
+@keyframes GoUp {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        opacity: 0;
+    }
+}

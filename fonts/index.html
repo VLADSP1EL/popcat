@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="animations/swoosh.css">
+	<link rel="stylesheet" type="text/css" href="animations/spin.css">
+
+	<title>POP CAT</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no" charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="/img/skin/art_close.jpg" type="image/png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="main">
+<div class="spin">
+<div class="cat" id="cat" ontouchstart onclick="new DivObject()"></div></div>
+<img id="autopopgif" src="img/background.gif" width="50px"> 
+<br><br>
+
+<img src="img/ranks/lvl_1.png" width="25px;" id="lvl_1">
+<img src="img/ranks/lvl_2.png" width="25px;" id="lvl_2">
+<img src="img/ranks/lvl_3.png" width="25px;" id="lvl_3">
+<img src="img/ranks/lvl_4.png" width="25px;" id="lvl_4">
+<img src="img/ranks/lvl_5.png" width="25px;" id="lvl_5">
+<img src="img/ranks/lvl_6.png" width="25px;" id="lvl_6">
+<img src="img/ranks/lvl_7.png" width="25px;" id="lvl_7">
+<img src="img/ranks/lvl_8.png" width="25px;" id="lvl_8">
+<img src="img/ranks/lvl_9.png" width="25px;" id="lvl_9">
+<img src="img/ranks/lvl_10.png" width="25px;" id="lvl_10">
+<img src="img/ranks/lvl_11.png" width="25px;" id="lvl_11">
+<img src="img/ranks/lvl_12.png" width="25px;" id="lvl_12">
+<img src="img/ranks/lvl_13.png" width="25px;" id="lvl_13">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_14">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_15">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_16">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_17">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_18">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_19">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_20">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_21">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_22">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_23">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_24">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_25">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_26">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_27">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_28">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_29">
+<img src="img/ranks/lvl_14.png" width="25px;" id="lvl_30">
+
+
+
+<a class="smalltext" id="lvl"></a><a class="smalltext" id="xp"></a><br>
+<div class="swoosh">
+<a id="opened" class="opened"></a><br></div><br>
+
+<a id="shopopen" onclick="openshop()"><img src="img/shop_icon.png" width="70px" id="openshop"></img><img id="shopopened" src="img/shop_opened.png" width="70px"></img></a><br>
+<div class="mainmenu">
+
+<div class="menu" id="menu"><br>
+<a id="buystatus" class="smalltext">You bought a pop</a><br>
+<a id="cpc" class="opened"></a><br><br>
+<img src="img/upgrades/mini_pop.png" width="25px">
+<a class="button" id="upgradecats" onclick="upgradeGet()"></a><br><a class="smalltext">+1 pop per click</a><Br><br>
+<img src="img/upgrades/pop.png" width="25px">
+<a class="button" id="pop" onclick="upgrade2()"></a><br><a class="smalltext">x2 pop per click</a><br><br>
+<img src="img/background.gif" width="25px">
+<a class="button" id="autopop" onclick="buyautopop()"></a><br><a class="smalltext" id="autopopinfo"></a><br><br>
+<hr>
+<a class="opened">Settings</a><br><br>
+<a class="button" id="background" onclick="changebackground()"></a><br><br>
+<a class="button" id="restore" onclick="restore()">Reset progress</a><br><br>
+<a></a><br>
+</div>
+
+</div>
+
+</div>
+<script type="text/javascript" src="cout.js"></script>
+
+</body>
+</html>
